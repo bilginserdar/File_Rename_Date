@@ -12,7 +12,7 @@
 	for ($i=0; $i < $dosyaSayisi; $i++) { 
 		$isimDuzenle 	= str_replace("files/", "", $klasor[$i]);
 		$dosyaSonAd 	= $islemler->tarih($klasor[$i])."-".$isimDuzenle;
-		$tarihler 		= $islemler->tarih($klasor[$i]);
+		$tarihler 	= $islemler->tarih($klasor[$i]);
 		rename($klasor[$i], "files/".$dosyaSonAd);
 	}
 ```
